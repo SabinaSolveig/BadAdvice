@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/adviceListFragment">
+
+    <fragment
+        android:id="@+id/adviceListFragment"
+        android:name="com.example.advice.AdviceListFragment"
+        android:label="@string/app_name">
+        <action
+            android:id="@+id/action_adviceListFragment_to_adviceDetailFragment"
+            app:destination="@id/adviceDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adviceDetailFragment"
+        android:name="com.example.advice.AdviceDetailFragment"
+        android:label="@string/advice_detail_title" />
+</navigation>

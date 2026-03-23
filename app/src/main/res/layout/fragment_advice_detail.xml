@@ -1,0 +1,42 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="@dimen/padding_medium">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_day_title"
+            style="@style/DetailDayText"
+            android:text="@string/day_format"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/DetailTitleText"
+            android:text="@string/advice_title"/>
+
+        <ImageView
+            android:id="@+id/iv_full_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:maxHeight="@dimen/image_max_height"
+            android:background="@color/gray_light"/>
+
+        <TextView
+            android:id="@+id/tv_full_description"
+            style="@style/DetailDescriptionText"
+            android:fontFamily="monospace"
+            android:lineSpacingMultiplier="1.3"
+            android:padding="@dimen/padding_small"/>
+    </LinearLayout>
+</ScrollView>
