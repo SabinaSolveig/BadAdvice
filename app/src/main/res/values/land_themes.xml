@@ -1,33 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.AdviceApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/indigo_500</item>
-        <item name="colorPrimaryVariant">@color/indigo_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <item name="android:windowBackground">@color/gray_light</item>
-        <item name="materialCardViewStyle">@style/Widget.AdviceApp.CardView</item>
-    </style>
-
-    <style name="Widget.AdviceApp.CardView" parent="Widget.MaterialComponents.CardView">
-        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
-        <item name="cardElevation">@dimen/elevation_card</item>
-        <item name="cardBackgroundColor">@color/card_background</item>
-    </style>
-
-
-    <style name="AdviceDayText">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/text_size_day</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/indigo_500</item>
-        <item name="android:gravity">center</item>
-    </style>
-
-    <style name="AdviceTitleText">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LandAdviceTitleText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_title_medium</item>
@@ -36,9 +9,11 @@
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:paddingHorizontal">@dimen/padding_small</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
     </style>
 
-    <style name="AdviceDescriptionText">
+    <style name="LandAdviceDescriptionText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_body</item>
@@ -47,21 +22,48 @@
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">center</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:padding">@dimen/padding_small</item>
     </style>
 
-    <style name="DetailDayText">
+    <style name="HorizontalDetailContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+
+    <style name="HorizontalDetailImage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+        <item name="android:maxHeight">@dimen/image_max_height</item>
+        <item name="android:background">@color/gray_light</item>
+    </style>
+
+    <style name="HorizontalDetailTextContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/padding_small</item>
+    </style>
+
+    <style name="HorizontalDetailDayText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_day</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/indigo_500</item>
-        <item name="android:paddingTop">@dimen/padding_large</item>
         <item name="android:paddingBottom">@dimen/padding_small</item>
         <item name="android:gravity">center</item>
-        <item name="android:letterSpacing">0.05</item>
     </style>
 
-    <style name="DetailTitleText">
+    <style name="HorizontalDetailTitleText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_title_large</item>
@@ -69,17 +71,17 @@
         <item name="android:paddingBottom">@dimen/padding_medium</item>
         <item name="android:gravity">center</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
     </style>
 
-    <style name="DetailDescriptionText">
+    <style name="HorizontalDetailDescriptionText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_body_large</item>
-        <item name="android:lineSpacingExtra">4dp</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
         <item name="android:gravity">center</item>
         <item name="android:textAlignment">center</item>
         <item name="android:fontFamily">monospace</item>
     </style>
-
 </resources>

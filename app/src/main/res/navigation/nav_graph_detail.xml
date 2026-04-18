@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/adviceDetailFragment">
+
+    <fragment
+        android:id="@+id/adviceDetailFragment"
+        android:name="com.example.advice.AdviceDetailFragment"
+        android:label="Detail">
+
+        <argument
+            android:name="advice"
+            app:argType="com.example.advice.model.Advice" />
+    </fragment>
+
+</navigation>
